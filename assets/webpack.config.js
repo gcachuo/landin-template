@@ -19,7 +19,14 @@ module.exports = {
             {test: /\.(eot|woff|ttf|woff2)/, loader: 'file-loader?name=[folder]/[name].[ext]'}
         ]
     },
+    resolve: {
+        extensions: [ '.tsx', '.ts', '.js' ],
+        alias: {
+            typeahead: 'typeahead.js',
+            bloodhound: 'typeahead.js/dist/bloodhound.js',
+        }
+    },
     plugins: [
-        new ExtractTextPlugin("styles.css")
+        new ExtractTextPlugin("index.css")
     ]
 };

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    //"noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "moduleResolution": "Node",
+    "lib": [
+      "dom",
+      "es7"
+    ]
+  },
+  "include": [
+    "src/ts/core/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
