@@ -8,7 +8,6 @@ module.exports = {
     },
     module: {
         rules: [
-            {test: /jquery\.js$/, loader: 'expose-loader?jQuery!expose-loader?$'},
             {test: /\.css$/, loader: ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader'})},
             {
                 test: /\.scss$/,

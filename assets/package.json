@@ -11,7 +11,9 @@
     "release": "yarn run version && yarn install",
     "version": "version=$(git branch | grep .*release\\/ | sed 's/* release\\///g') && yarn version --new-version $version"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.4.0"
+  },
   "devDependencies": {
     "@types/jquery": "^3.3.29",
     "css-loader": "^2.1.1",
