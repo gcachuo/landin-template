@@ -1,0 +1,21 @@
+{
+  "name": "landing-page-template",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf ../www/assets/",
+    "watch": "yarn clean && webpack --mode development --watch",
+    "build": "yarn clean && webpack --mode development",
+    "buildp": "yarn clean && webpack --mode production",
+    "webpack": "rm -f package-lock.json && yarn upgrade && yarn build",
+    "postinstall": "yarn webpack",
+    "release": "yarn run version && yarn install",
+    "version": "version=$(git branch | grep .*release\\/ | sed 's/* release\\///g') && yarn version --new-version $version"
+  },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-alpha.0",
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.1"
+  }
+}
