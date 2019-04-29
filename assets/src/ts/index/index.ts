@@ -1,5 +1,5 @@
 export class Index {
-    static init(){
+    static init() {
 
     }
 }
