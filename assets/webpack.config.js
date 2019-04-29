@@ -14,7 +14,8 @@ module.exports = {
                 loader: ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader!sass-loader'})
             },
             {test: /img\//, loader: 'file-loader?name=../[folder]/[name].[ext]'},
-            {test: /\.(gif|png|jpg|svg|cur)$/, loader: 'file-loader?name=[folder]/[name].[ext]'}, {
+            {test: /\.(gif|png|jpg|svg|cur)$/, loader: 'file-loader?name=[folder]/[name].[ext]'},
+            {
                 test: /\.ts$/,
                 loader: 'ts-loader'
             },
