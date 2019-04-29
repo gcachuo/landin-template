@@ -1,4 +1,4 @@
-export class Index {
+export class Dashboard {
     static init() {
 
     }

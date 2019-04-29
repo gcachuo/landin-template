@@ -6,7 +6,7 @@
     "watch": "yarn clean && webpack --mode development --watch",
     "build": "yarn clean && webpack --mode development",
     "buildp": "yarn clean && webpack --mode production",
-    "webpack": "rm -f package-lock.json && yarn upgrade && yarn build",
+    "webpack": "rm -f package-lock.json && yarn upgrade && yarn buildp",
     "postinstall": "yarn webpack",
     "release": "yarn run version && yarn install",
     "version": "version=$(git branch | grep .*release\\/ | sed 's/* release\\///g') && yarn version --new-version $version"
@@ -19,7 +19,6 @@
     "css-loader": "^2.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "node-sass": "^4.12.0",
-    "requirejs": "^2.3.6",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "ts-loader": "^5.4.4",
