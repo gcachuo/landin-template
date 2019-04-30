@@ -11,14 +11,13 @@
     "release": "yarn run version && yarn install",
     "version": "version=$(git branch | grep .*release\\/ | sed 's/* release\\///g') && yarn version --new-version $version"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "file-loader": "^3.0.1",
     "@types/jquery": "^3.3.29",
     "@types/node": "^11.13.8",
     "css-loader": "^2.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
     "jquery": "^3.4.0",
     "mustache": "^3.0.1",
     "node-sass": "^4.12.0",
